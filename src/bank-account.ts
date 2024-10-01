@@ -1,13 +1,13 @@
 class BankAccount {
     balance: number
 
-    constructor(initialAmount: string) {
-        balance = initialAmount
+    constructor(initialAmount: number) { // not a string
+       this.balance = initialAmount  // it's constructor so it's mean it should start from statement this
     }
 
     deposit(amount: number): number {
-        this.balance
-        return 0
+        this.balance += amount // to know the balance after the deposit we need to add that amount
+        return this.balance
     }
 }
 

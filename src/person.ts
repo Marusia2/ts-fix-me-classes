@@ -2,17 +2,17 @@ class Person {
     name: string
     age: number
 
-    constructor(name: string, age: string) {
-        this.Name = name
+    constructor(name: string, age: number) {  // age parameter is not a string
+        this.name = name // constructor value should be written with lower case
         this.age = age
     }
 
     getName(): string {
-        return this.Name
+        return this.name  // lower case
     }
 
     getAge(): number {
-        return age
+        return this.age  // value from constructor
     }
 }
 
